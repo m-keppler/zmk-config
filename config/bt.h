@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define BT_CLR_CMD 0
+define BT_CLR_CMD 0
 #define BT_NXT_CMD 1
 #define BT_PRV_CMD 2
 #define BT_SEL_CMD 3
