@@ -16,8 +16,8 @@
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
-            // | SHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   | SHIFT |
-            // | CTRL  |  Z  |  X  |  C   |  V   |  B   |        |  |       |  N   |  M    |  ,    |  .   |   /   |   '   |
+            // | SHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   | '     |
+            // | CTRL  |  Z  |  X  |  C   |  V   |  B   |        |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
             //               | ALT | ESC  | LOWER|SPACE |  GUI   |  | ENTER | SPACE| RAISE | CTRL  | ALT  |
 
             bindings = <
