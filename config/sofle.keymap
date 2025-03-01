@@ -61,9 +61,9 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2           &bt BT_SEL 3      &bt BT_SEL 4                             &trans         &trans    &trans     &trans     &trans         &bt BT_CLR
-&kp ESC     &kp INS       &kp PSCRN             &kp K_CMENU            &trans            &trans                                   &kp PAGE_UP    &kp HOME  &kp UP     &kp END    &trans         &kp DEL
+&kp ESC     &kp INS       &kp PSCRN             &kp K_CMENU            &kp LEFT_BRACE    &kp RIGHT_BRACE                          &kp PAGE_UP    &kp HOME  &kp UP     &kp END    &trans         &kp DEL
 &kp ESC     &kp LALT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                        &kp PAGE_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &kp BACKSLASH  &kp RSHFT
-&kp LSHFT   &kp K_UNDO    &kp K_CUT             &kp K_COPY             &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans       &trans   &trans         &kp HOME  &trans     &kp END    &trans         &kp RET
+&kp LSHFT   &kp K_UNDO    &kp K_CUT             &kp K_COPY             &kp K_PASTE       &trans             &trans       &trans   &trans         &kp HOME  &trans     &kp END    &trans         &kp RET
                           &kp LALT              &kp ESC                &trans            &kp SPACE          &kp LCTRL    &kp RET  &kp SPACE      &trans    &kp RCTRL  &kp RALT
             >;
 
