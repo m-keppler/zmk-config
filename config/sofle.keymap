@@ -51,11 +51,11 @@
             //               | ALT | CTRL |      | SPACE|  GUI  |  | ENTER  | SPACE|       | CTRL  | ALT  |
 
             bindings = <
-&kp GRAVE       &kp F1            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &kp C_MUTE             &kp F5                           &kp F6     &kp F7          &kp F8           &kp F9            &kp F10            &kp F11
-&kp TAB         &kp N1            &kp NUMBER_2       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N5                           &trans     &kp LBKT        &kp RBKT         &kp N9            &kp N0             &kp DEL
-&kp LCTRL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F5                           &kp EQUAL  &kp PLUS        &kp MINUS        &kp ASTERISK      &kp SLASH          &kp PIPE
-&kp LEFT_SHIFT  &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5     &trans       &trans   &kp TILDE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
-                                  &kp LALT           &kp ESC               &trans                 &kp SPACE  &kp LCTRL    &kp RET  &kp SPACE  &trans          &kp DEL          &kp RALT
+&kp GRAVE       &kp F1            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &kp C_MUTE             &kp F5                           &kp F6        &kp F7          &kp F8           &kp F9            &kp F10            &kp F11
+&kp TAB         &kp N1            &kp NUMBER_2       &kp NUMBER_3          &kp NUMBER_4           &kp N5                           &kp NUMBER_6  &kp N7          &kp N8           &kp N9            &kp N0             &kp DEL
+&kp LCTRL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F5                           &kp EQUAL     &kp PLUS        &kp MINUS        &kp ASTERISK      &kp SLASH          &kp PIPE
+&kp LEFT_SHIFT  &kp F1            &kp F2             &kp F3                &kp F4                 &kp F5     &trans       &trans   &kp TILDE     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
+                                  &kp LALT           &kp ESC               &trans                 &kp SPACE  &kp LCTRL    &kp RET  &kp SPACE     &trans          &kp DEL          &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
