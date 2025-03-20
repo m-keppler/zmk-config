@@ -19,6 +19,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Print {
+            bindings = <&trans>;
+            key-positions = <16 22>;
+            layers = <2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
