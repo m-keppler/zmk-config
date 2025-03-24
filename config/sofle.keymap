@@ -82,7 +82,7 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                           &trans         &trans          &trans           &trans     &trans         &kp PRINTSCREEN
 &kp ESC     &kp INS       &kp PSCRN     &kp K_CMENU     &kp LEFT_BRACE  &kp RIGHT_BRACE                        &kp PAGE_UP    &kp HOME        &kp UP           &kp END    &trans         &kp BACKSPACE
-&kp ESC     &sk LEFT_WIN  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LCTRL       &kp TAB                                &kp PAGE_DOWN  &kp LEFT        &kp DOWN         &kp RIGHT  &kp BACKSLASH  &kp RSHFT
+&kp LCTRL   &sk LEFT_WIN  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LCTRL       &kp TAB                                &kp PAGE_DOWN  &kp LEFT        &kp DOWN         &kp RIGHT  &kp BACKSLASH  &kp RSHFT
 &kp LSHFT   &kp LC(Z)     &kp LC(X)     &kp LC(C)       &kp LC(V)       &trans           &trans       &trans   &trans         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp END    &trans         &kp RET
                           &kp LALT      &kp ESC         &trans          &kp SPACE        &kp LCTRL    &kp RET  &kp SPACE      &trans          &kp RCTRL        &kp RALT
             >;
