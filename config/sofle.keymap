@@ -14,6 +14,13 @@
 // Source unicode-chars for desired languages
 #include "zmk-helpers/unicode-chars/german.dtsi"
 
+#define DEF 0
+#define FN 1
+#define NAV 2
+#define SYS 3
+
+ZMK_CONDITIONAL_LAYER(sys, FN NAV, SYS) // FN + NAV --> SYS.
+
 / {
     behaviors {
         ctrl_sticky: ctrl_sticky {
