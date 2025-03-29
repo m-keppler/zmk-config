@@ -103,7 +103,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &de_ue  &trans  &de_oe  &trans  &trans
-&trans  &de_ae  &de_se  &kp h  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &de_ae  &de_eszett  &kp h  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
