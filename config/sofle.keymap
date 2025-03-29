@@ -10,7 +10,7 @@
 
 #include "zmk-helpers/helper.h"
 // Source desired key-position labels
-#include "zmk-helpers/key-labels/glove80.h"
+#include "zmk-helpers/key-labels/sofle.h"
 // Source unicode-chars for desired languages
 #include "zmk-helpers/unicode-chars/german.dtsi"
 
