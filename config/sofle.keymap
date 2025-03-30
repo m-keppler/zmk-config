@@ -97,7 +97,7 @@ ZMK_CONDITIONAL_LAYER(sys, FN NAV, SYS) // FN + NAV --> SYS.
 &kp ESC     &kp INS       &kp PSCRN     &kp K_CMENU     &kp LEFT_BRACE  &kp RIGHT_BRACE                        &kp PAGE_UP    &kp HOME        &kp UP           &kp END    &trans         &kp BACKSPACE
 &kp LCTRL   &sk LEFT_WIN  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LCTRL       &kp TAB                                &kp PAGE_DOWN  &kp LEFT        &kp DOWN         &kp RIGHT  &kp BACKSLASH  &kp RSHFT
 &kp LSHFT   &kp LC(Z)     &kp LC(X)     &kp LC(C)       &kp LC(V)       &trans           &trans       &trans   &trans         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp END    &trans         &kp RET
-                          &kp LALT      &kp ESC         &mo 3           &kp SPACE        &kp LCTRL    &kp RET  &kp SPACE      &trans          &kp RCTRL        &kp RALT
+                          &kp LALT      &kp ESC         &trans           &kp SPACE        &kp LCTRL    &kp RET  &kp SPACE      &trans          &kp RCTRL        &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
