@@ -107,7 +107,7 @@ ZMK_CONDITIONAL_LAYER(sys, FN NAV, SYS) // FN + NAV --> SYS.
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &de_ue  &trans  &de_oe  &trans  &trans
-&trans  &de_ae  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &de_ae  &de_eszett  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
