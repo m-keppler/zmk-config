@@ -8,16 +8,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#include "zmk-helpers/helper.h"
-// Source desired key-position labels
-#include "zmk-helpers/key-labels/sofle.h"
-// Source unicode-chars for desired languages
-#include "zmk-helpers/unicode-chars/german.dtsi"
-
-#define DEF 0
-#define FN 1
-#define NAV 2
-#define SYS 3
+#define BASE   0
+#define LOWER  1
+#define RAISE  2
+#define ADJUST 3
 
 ZMK_CONDITIONAL_LAYER(sys, FN NAV, SYS) // FN + NAV --> SYS.
 
