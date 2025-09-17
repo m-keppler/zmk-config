@@ -8,10 +8,16 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define BASE   0
-#define LOWER  1
-#define RAISE  2
-#define ADJUST 3
+#include "zmk-helpers/helper.h"
+// Source desired key-position labels
+#include "zmk-helpers/key-labels/sofle.h"
+// Source unicode-chars for desired languages
+#include "zmk-helpers/unicode-chars/german.dtsi"
+
+#define DEF 0
+#define FN 1
+#define NAV 2
+#define SYS 3
 
 ZMK_CONDITIONAL_LAYER(sys, FN NAV, SYS) // FN + NAV --> SYS.
 
@@ -65,14 +71,14 @@ ZMK_CONDITIONAL_LAYER(sys, FN NAV, SYS) // FN + NAV --> SYS.
             // |  TAB  |   1 |VOL_D|VOL_U | MUTE |   5  |                   |      |  [    |  ]    |  0   |  F12  | DEL
             // | SHIFT |  !  |  @  |  #   |  $   |  %   |                   |  =   |  (    |  )    |  ^   |   &   | SHIFT |
             // | CTRL  |  =  |  -  |  +   |  [   |  ]   |       |  |        |      |  {    |  }    |  :   |   \   |   |   |
-            //               | ALT | CTRL |      | SPACE|  GUI  |  | ENTER  | SPACE|       | CTRL  | ALT  |
+            //               | ALT | CTRL |      | SPACE|  LCTRL  |  | GUI  | ENTER|       | CTRL  | ALT  |
 
             bindings = <
 &kp GRAVE       &kp F1                 &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp F5                           &kp F6        &kp F7                &kp F8                 &kp F9            &kp F10            &kp F11
 &kp TAB         &kp N1                 &kp NUMBER_2       &kp NUMBER_3     &kp NUMBER_4  &kp N5                           &kp NUMBER_6  &kp N7                &kp N8                 &kp N9            &kp N0             &kp DEL
 &kp LCTRL       &ctrl_sticky LEFT_WIN  &sk LEFT_ALT       &sk LEFT_SHIFT   &sk LCTRL     &kp F5                           &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PIPE
 &kp LEFT_SHIFT  &kp F1                 &kp F2             &kp F3           &kp F4        &kp F5     &trans       &trans   &kp TILDE     &kp PLUS              &kp MINUS              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
-                                       &kp LALT           &kp ESC          &trans        &kp SPACE  &kp LCTRL    &kp RET  &kp SPACE     &trans                &kp DEL                &kp RALT
+                                       &kp LALT           &kp ESC          &trans        &kp SPACE  &kp LCTRL    &kp RGUI  &kp RET     &trans                &kp DEL                &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -84,14 +90,14 @@ ZMK_CONDITIONAL_LAYER(sys, FN NAV, SYS) // FN + NAV --> SYS.
             // | TAB  | INS  | PSCR | GUI  |       |      |                 |      | PGUP  |   ^   | PGDN |       | DEL   |
             // | SHIF | ALT  | CTRL |SHIFT |       | CAPS |                 |      |   <-  |   v   |  ->  |  DEL  | SHIFT |
             // | CTRL | UNDO | CUT  | COPY | PASTE |      |      |  |       |      | HOME  |       | END  |       | ENTER |
-            //               | ALT  | CTRL |       | SPACE|  GUI |  | ENTER | SPACE|       | CTRL  | ALT  |
+            //               | ALT  | CTRL |       | SPACE|  GUI |  | GUI | ENTER|       | CTRL  | ALT  |
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                           &trans         &trans          &trans           &trans     &trans         &kp PRINTSCREEN
 &kp ESC     &kp INS       &kp PSCRN     &kp K_CMENU     &kp LEFT_BRACE  &kp RIGHT_BRACE                        &kp PAGE_UP    &kp HOME        &kp UP           &kp END    &trans         &kp BACKSPACE
 &kp LCTRL   &sk LEFT_WIN  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LCTRL       &kp TAB                                &kp PAGE_DOWN  &kp LEFT        &kp DOWN         &kp RIGHT  &kp BACKSLASH  &kp RSHFT
 &kp LSHFT   &kp LC(Z)     &kp LC(X)     &kp LC(C)       &kp LC(V)       &trans           &trans       &trans   &trans         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp END    &trans         &kp RET
-                          &kp LALT      &kp ESC         &trans           &kp SPACE        &kp LCTRL    &kp RET  &kp SPACE      &trans          &kp RCTRL        &kp RALT
+                          &kp LALT      &kp ESC         &trans           &kp SPACE        &kp LCTRL    &kp RGUI  &kp RET      &trans          &kp RCTRL        &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
